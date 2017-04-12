@@ -9,7 +9,13 @@ public class TestDataCreation{
         for(Integer i=0; i<numRel; i++){
             relList.add(new Release__c(Name='Test'+i, Wave__c=i, Status__c=status));
         }
+        //Vaibhav Goel Ading code for June release 2017 
+        system.debug('-----Sample debug 1----');
+       	system.debug('-----Sample debug 2----');
+        //Vaibhav goel code change ends
+        
         return insertRecord(relList);
+        
     }
     
     public static List<User_Story__c> createUserStories(Integer numUS, User usr){
